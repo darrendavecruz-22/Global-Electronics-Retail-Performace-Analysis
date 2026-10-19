@@ -1,0 +1,47 @@
+Color Palette:
+Background: e9e8ec
+Big Box: eef1f6
+Cards, Charts bg: White (Default)
+Text, Bars, lines: 455a75
+Increase: 66bb6a
+Decrease: ff788d
+
+Lightest to dark: 
+e2e8ee
+cbd5e0
+b5c1d2
+96a9c0
+778ea9
+647a94
+475d78
+3f526d
+364862
+2e3d52
+29384e
+202b3c
+
+┌──────────────────────────────────────────────────────────┐
+│ Title strip: Product Performance                         │
+├──────────────────────────────────────────────────────────┤
+│ [Year]            [Category ▾]            [Brand ▾]      │
+├────────────────────────────┬─────────────────────────────┤
+│ Combo: Profit and Margin   │ Scatter: Revenue vs Margin  │
+│ by Category                │ by Subcategory              │
+├──────────────┬─────────────┴─┬───────────────────────────┤
+│ Top 10       │ Lowest-margin │ Matrix: Category →        │
+│ products     │ products      │ Subcategory               │
+├──────────────┴───────────────┴───────────────────────────┤
+│ Key takeaways strip                                      │
+└──────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────┐
+│ Title: Store & Geography      [Year] [Country] [Channel] │
+├──────────────────────────────────────────────────────────┤
+│ [Active Stores][In-Store Rev][Rev/Store][Rev/Sq M][Online %]│
+├────────────────────────────┬─────────────────────────────┤
+│ Online vs In-store share   │ Treemap: Revenue by         │
+│ by year                    │ Country → State             │
+├────────────────────────────┼─────────────────────────────┤
+│ Scatter: store size vs     │ Table: store ranking        │
+│ revenue                    │                             │
+└────────────────────────────┴─────────────────────────────┘
