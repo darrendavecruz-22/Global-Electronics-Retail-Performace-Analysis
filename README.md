@@ -47,3 +47,6 @@ Totals below use 2016 to 2020 (full years): about $54.7M revenue and $32.1M prof
 7. Lapsed is the biggest segment, which consists of 34.5% of customers and 21.6% of profit, with last order about 1,039 days ago.
 8. At Risk is only 5.5% of customers but 8.4% of profit, at $4,182 per customer (second only to Champions).
 9. Cohorts: first-year profit per customer is steady for 2016 to 2019 ($1,730 to $1,930), and first-year orders rose from 1.22 (2016) to 1.55 (2018).
+
+##Data Source##
+[Source](https://mavenanalytics.io/data-playground/global-electronics-retailer)
