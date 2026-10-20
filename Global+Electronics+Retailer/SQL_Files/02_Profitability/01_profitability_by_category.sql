@@ -19,7 +19,7 @@ FROM ge.vw_sales_products_fact
 WHERE YEAR(Order_Date) BETWEEN 2016 AND 2020;
 -- 8 Categories & 32 Subcategories
 
--- Category Summary
+-- Main Query
 SELECT
 	-- Total revenue, profit, margin
 	Category,
@@ -40,8 +40,8 @@ SELECT
 
 	-- Unit sold, profit per unit, Average selling price
 	SUM(Quantity) AS Units_Sold,
-	CAST(ROUND(100.0 * SUM(Gross_Profit) / SUM(Quantity), 2) AS DECIMAL(18,2)) AS Profit_per_unit,
-	CAST(ROUND(100.0 * SUM(Revenue) / SUM(Quantity), 2) AS DECIMAL(18,2)) AS Avg_selling_price
+	CAST(ROUND(1.0 * SUM(Gross_Profit) / SUM(Quantity), 2) AS DECIMAL(18,2)) AS Profit_per_unit,
+	CAST(ROUND(1.0 * SUM(Revenue) / SUM(Quantity), 2) AS DECIMAL(18,2)) AS Avg_selling_price
 FROM ge.vw_sales_products_fact
 WHERE YEAR(Order_Date) BETWEEN 2016 AND 2020
 GROUP BY Category

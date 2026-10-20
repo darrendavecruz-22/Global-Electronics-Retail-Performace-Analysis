@@ -16,6 +16,7 @@ SELECT
 FROM ge.vw_product_profitability;
 -- If Product_w_sales < Products_in_catalog then some products weren't sold.
 
+-- Main query
 -- Top 10 and bottom 10 products by gross profit
 WITH CTE_ranking AS
 (

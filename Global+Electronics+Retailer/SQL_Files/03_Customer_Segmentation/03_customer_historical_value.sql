@@ -15,9 +15,9 @@ WITH CTE_percentile AS
 	SELECT
 		Orders, Revenue, Profit,
 		-- Median
-		PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY Profit DESC) OVER() AS Median_Profit,
+		PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY Profit) OVER() AS Median_Profit,
 		-- 90th Percentile
-		PERCENTILE_CONT(0.9) WITHIN GROUP (ORDER BY Profit DESC) OVER() AS P90_Profit
+		PERCENTILE_CONT(0.9) WITHIN GROUP (ORDER BY Profit) OVER() AS P90_Profit
 	FROM ge.vw_customer_summary
 )
 -- Main query
