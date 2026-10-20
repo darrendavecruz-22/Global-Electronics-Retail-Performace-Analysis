@@ -1,12 +1,15 @@
--- 05_customer_historical_value
+/* -----------------------------------------------------------------------------
+   Query: Overall historical customer value
+   Purpose: Summarizes what a typical customer is worth over their whole
+   history, and how many customers come back.
 
-/*
-Questions:
-Q1: What is a customer worth to date, and how uneven is that value?
-Q2: Do newer customer cohorts bring in as much as older ones in their first 12 months?
-*/
+   Notes: Calculates the median and 90th percentile of customer profit,
+   then summarizes the customer base in one row. Totals cover each
+   customer's full order history.
+   ----------------------------------------------------------------------------- */
 
--- Sol'n Q1: Overall historical value
+
+-- Overall historical value
 WITH CTE_percentile AS
 (
 	SELECT
@@ -17,6 +20,7 @@ WITH CTE_percentile AS
 		PERCENTILE_CONT(0.9) WITHIN GROUP (ORDER BY Profit DESC) OVER() AS P90_Profit
 	FROM ge.vw_customer_summary
 )
+-- Main query
 SELECT
 	-- Customer count
 	COUNT(*) AS Customers,
@@ -33,7 +37,23 @@ SELECT
 	CAST(ROUND(100.0 * SUM(CASE WHEN Orders > 1 THEN 1 ELSE 0 END) / COUNT(*), 2) AS DECIMAL(18,2)) AS Pct_Repeat_Customers
 FROM CTE_percentile;
 
--- Sol'n Q2: Cohort value. Compares each acquisition year on its first 12 months only, so older
+
+/* -----------------------------------------------------------------------------
+   Query: Cohort value by acquisition year
+   Purpose: Compares customers by the year of their first order, using only
+   their first 12 months, to see whether newer customers are worth
+   more or less than older ones.
+
+   Notes: Each customer is measured over the 365 days after their first
+   order, so older cohorts do not look better just because they
+   had more time.
+
+   Cohort value: Compares each acquisition year on its first 12 months only, 
+   so older cohorts do not look better just because they had more time. 
+   Cohorts that have not had 12 full months before the last order date are excluded.
+   ----------------------------------------------------------------------------- */
+
+-- Cohort value: Compares each acquisition year on its first 12 months only, so older
 -- cohorts do not look better just because they had more time. Cohorts that have not
 -- had 12 full months before the last order date are excluded.
 WITH CTE_cohort AS

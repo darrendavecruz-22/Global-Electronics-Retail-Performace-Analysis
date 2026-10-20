@@ -1,16 +1,14 @@
--- Month-over-Month MoM
+/* =============================================================================
+   Query: Month-over-Month (MoM)
 
-/*
-Questions:
-Q1: Which months experienced simultaneous declines in revenue and gross profit?
-Q2: Which months experienced the largest revenue declines?
-Q3: Which months experienced the largest profit declines?
-Q4: Do revenue and profit declines coincide with lower order volume?
-Q5: Are declines concentrated in particular months or repeated across multiple years?
-*/
+   Purpose: Gives a general overview of year-over-year (YoY) performance:
+   yearly totals, profit margin, and YoY growth in revenue, profit, and orders.
 
--- Sol'n: Calculate the MoM for total revenue, total profit, and total orders.
--- Compare the revenue and profit for each month from previous year.
+   Notes: Totals the sales fact view by month, then compares each month
+   with the one before it (LAG of 1 row) and with the same month
+   a year earlier (LAG of 12 rows).
+   ============================================================================= */
+
 WITH CTE_monthly_growth AS
 (
 	SELECT

@@ -1,15 +1,16 @@
--- Quarterly Growth (QoQ)
+/* =============================================================================
+   Query: Quarterly Growth (QoQ)
 
-/* 
-Questions:
-Q1: Is revenue increasing or decreasing compared with the previous quarter?
-Q2: Is profit growing at the same pace as revenue?
-Q3: Are sales becoming more or less profitable?
-Q4: Is growth driven by more orders or larger purchases?
-Q5: Are declines concentrated in particular quarters or repeated across multiple years?
-*/
+   Purpose: Shows quarterly performance and how it changes from quarter to
+   quarter (QoQ) and from the same quarter last year (YoY),
+   including whether profit is growing faster or slower than revenue.
 
--- Sol'n:
+   Notes: Totals the sales fact view by quarter, calculates margin, order
+   value, and units per order, then compares each quarter with the
+   one before it (LAG of 1 row) and with the same quarter a year
+   earlier (LAG of 4 rows).
+   ============================================================================= */
+
 WITH CTE_quarterly_growth AS
 (
 	SELECT

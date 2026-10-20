@@ -1,5 +1,4 @@
--- Q1: How do you handle NULLs for money data types?
--- Sol'n: Check the root cause of the error, usually it is the dollar sign or comma or both.
+-- Check the root cause of the error, usually it is the dollar sign or comma or both.
 
 -- Create a new products table and convert the data type into string
 CREATE TABLE ge.Products_staging (
@@ -38,7 +37,7 @@ SET p.Unit_Cost_USD = TRY_CONVERT(money, REPLACE(REPLACE(LTRIM(RTRIM(ps.Unit_Cos
     p.Unit_Price_USD = TRY_CONVERT(money, REPLACE(REPLACE(LTRIM(RTRIM(ps.Unit_Price_USD)), '$', ''), ',', ''))
 FROM ge.Products AS p
 JOIN ge.Products_staging AS ps
-ON TRY_CONVERT(int, ps.ProductKey) = p.ProductKey
+ON TRY_CONVERT(int, ps.ProductKey) = p.ProductKey;
 
 -- Check if there are still NULLS using the CASE statements.
 SELECT

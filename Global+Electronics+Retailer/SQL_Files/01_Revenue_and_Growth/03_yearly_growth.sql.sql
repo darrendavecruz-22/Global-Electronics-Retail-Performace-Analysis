@@ -1,16 +1,15 @@
--- Year-over-Year (YoY)
+/* =============================================================================
+   Query: Year-Over-Year Growth (YoY)
 
-/*
-Questions:
-Q1: How has annual revenue changed from one year to the next?
-Q2: Is gross profit growing faster or slower than revenue?
-Q3: Has the retailer's profit margin improved or deteriorated over time?
-Q4: Are increases in revenue accompanied by increases in order volume?
-Q5: Which complete year had the strongest and weakest revenue growth?
-Q6: Which complete year had the strongest and weakest profit growth?
-*/
+   Purpose: Gives a general overview of year-over-year (YoY) performance:
+   yearly totals, profit margin, and YoY growth in revenue,
+   profit, and orders.
 
--- Sol'n: Summarize the total revenue, total profit, total cost, total orders by year
+   Notes: Totals the sales fact view by year, then compares each year with
+   the one before it using LAG. Only years with 12 months of data
+   are kept, so a partial year cannot distort the growth rates.
+   ============================================================================= */
+
 WITH CTE_yearly_growth AS
 (
 	SELECT
