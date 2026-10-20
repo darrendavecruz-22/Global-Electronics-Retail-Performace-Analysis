@@ -48,22 +48,22 @@ Totals below use 2016 to 2020 (full years): about $54.7M revenue and $32.1M prof
 8. At Risk is only 5.5% of customers but 8.4% of profit, at $4,182 per customer (second only to Champions).
 9. Cohorts: first-year profit per customer is steady for 2016 to 2019 ($1,730 to $1,930), and first-year orders rose from 1.22 (2016) to 1.55 (2018).
 
-##Data Source##
+## Data Source
 Source: [Global-Electronics-Retailer](https://mavenanalytics.io/data-playground/global-electronics-retailer)
 
-##Tools and Approach##
+## Tools and Approach
 1. SQL Server: Query, clean, transform, and analyze the data.
 2. Excel: Inspect data and perform preliminary checks where needed.
 3. Power BI: Build interactive dashboards and visualize key performance indicators.
 
-##How to Reproduce##
+## How to Reproduce
 1. Clone or download this repository.
 2. Open the SQL scripts in SQL Server Management Studio.
 3. Run all the SQL queries located in the Main_views folder.
 4. Open the Power BI report in Power BI Desktop.
 5. Connect to the required data source, that is all the files in the Main_views folder as well as the Store.csv at the Data folder.
 
-##Screenshots of the Dash board##
+## Screenshots of the Dash board
 ![Dashboard Home](Dashboard_images/Home.png)
 ![Dashboard Overview](Dashboard_images/Overview.png)
 ![Dashboard Products](Dashboard_images/Products.png)
