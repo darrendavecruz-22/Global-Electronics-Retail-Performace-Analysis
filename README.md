@@ -3,7 +3,7 @@ An end-to-end data analysis project exploring sales performance, profitability, 
 
 The goal is to identify business trends, evaluate profitability, and uncover opportunities to improve revenue and customer performance.
 
-##  Dash Board Preview
+##  Dashboard Preview
 ![Dashboard Overview](Dashboard_images/Overview.png)
 
 ## Main Problem
@@ -59,6 +59,14 @@ Source: [Global-Electronics-Retailer](https://mavenanalytics.io/data-playground/
 ##How to Reproduce##
 1. Clone or download this repository.
 2. Open the SQL scripts in SQL Server Management Studio.
-3. Run all the SQL queries located in the Main_views folder, e.g. ![ge.vw_sales_product_fact](Main_views/ge.vw_sales_product_fact.sql)
+3. Run all the SQL queries located in the Main_views folder.
 4. Open the Power BI report in Power BI Desktop.
-5. Connect to the required data source and refresh the report, if necessary.
+5. Connect to the required data source, that is all the files in the Main_views folder as well as the Store.csv at the Data folder.
+
+##Screenshots of the Dash board##
+![Dashboard Home](Dashboard_images/Home.png)
+![Dashboard Overview](Dashboard_images/Overview.png)
+![Dashboard Products](Dashboard_images/Products.png)
+![Dashboard Stores](Dashboard_images/Stores.png)
+![Dashboard Customers](Dashboard_images/Customers.png)
+![Dashboard Profile](Dashboard_images/Profile.png)
