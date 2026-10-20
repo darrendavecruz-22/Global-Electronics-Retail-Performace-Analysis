@@ -20,14 +20,14 @@ This business analysis project aims to investigate how can a global electronics 
 ## Key Findings
 Totals below use 2016 to 2020 (full years): about $54.7M revenue and $32.1M profit, a 58.6% gross margin.
 
-Revenue and profit over time
+**Revenue and profit over time**
 1. Revenue grew from $6.95M in 2016 to $18.26M in 2019, then fell 49.1% in 2020 to $9.29M.
 2. Profit moved in line with revenue, and the margin stayed between 58.4% and 59.1% every year.
 3. The swings came from order volume, not from pricing or cost.
 4. The 2020 drop started in March. The revenue declined from $2.23M in February to $0.67M. Preceding months shown that the revenue had not recovered by Q1 2021 (-79% year over year).
 5. Q4 was the strongest quarter every year from 2016 to 2019. By month, February (index 1.65), December (1.64), and January (1.40) are the strongest, and April (0.15) is the weakest.
 
-Top categories, brands, and countries
+**Top categories, brands, and countries**
 1. Computers lead with 34.5% of revenue and $11.0M profit, followed by Home Appliances with 19.6% of revenue.
 2. The top four categories are Computers, Home Appliances, Cameras, Cell phones, which make up about 77% of revenue.
 3. Least performing categories are Games and Toys and Music, Movies and Audio Books.
@@ -37,7 +37,7 @@ Top categories, brands, and countries
 7. The least profitable products are low-priced accessories (USB cables, fan parts) earning $7 to $19 each at about 49% margin.
 8. The top 10 products are desktop computers and 52" LCD TVs, all at a 66.9% margin, and together they make up roughly 9% of profit.
 
-Demographics and buying behavior
+**Demographics and buying behavior**
 1. Age and gender barely change behavior. Profit per customer is $2,660 to $2,804 across age brackets, and $2,755 (male) vs $2,741 (female).
 2. Orders per customer are about 2.2 in every group.
 3. The 65+ group is the largest contributor (31% of customers and 31% of profit).
