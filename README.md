@@ -4,7 +4,7 @@ An end-to-end data analysis project exploring sales performance, profitability, 
 The goal is to identify business trends, evaluate profitability, and uncover opportunities to improve revenue and customer performance.
 
 ##  Dashboard Preview
-![Dashboard Overview](Dashboard_images/Overview.png)
+![Dashboard Overview](Images/Overview.png)
 
 ## Main Problem
 This business analysis project aims to investigate how can a global electronics retailer increase profitability, improve sales performance, and make better customer decisions using historical sales data. Specifically, the projects aims to answer the following questions:
@@ -64,12 +64,12 @@ Source: [Global-Electronics-Retailer](https://mavenanalytics.io/data-playground/
 5. Connect to the required data source. In the Main_views folder, select the ge.vw_sales_products_fact, ge.vw_customer_segments, and ge.vw_customer_value_decile. Also, select the Store.csv at the Data folder.
 
 ## Screenshots of the Dash board
-![Dashboard Home](Dashboard_images/Home.png)
-![Dashboard Overview](Dashboard_images/Overview.png)
-![Dashboard Products](Dashboard_images/Products.png)
-![Dashboard Stores](Dashboard_images/Stores.png)
-![Dashboard Customers](Dashboard_images/Customers.png)
-![Dashboard Profile](Dashboard_images/Profile.png)
+![Dashboard Home](Images/Home.png)
+![Dashboard Overview](Images/Overview.png)
+![Dashboard Products](Images/Products.png)
+![Dashboard Stores](Images/Stores.png)
+![Dashboard Customers](Images/Customers.png)
+![Dashboard Profile](Images/Profile.png)
 
 ## Revenue Forecast Chart
-
+![Revenue Forecast Chart](Images/Forecast.png)
