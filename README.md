@@ -61,7 +61,7 @@ Source: [Global-Electronics-Retailer](https://mavenanalytics.io/data-playground/
 2. Open the SQL scripts in SQL Server Management Studio.
 3. Run all the SQL queries located in the Main_views folder.
 4. Open the Power BI report in Power BI Desktop.
-5. Connect to the required data source, that is all the files in the Main_views folder as well as the Store.csv at the Data folder.
+5. Connect to the required data source. In the Main_views folder, select the ge.vw_sales_products_fact, ge.vw_customer_segment, and ge.vw_customre_ as well as the Store.csv at the Data folder.
 
 ## Screenshots of the Dash board
 ![Dashboard Home](Dashboard_images/Home.png)
