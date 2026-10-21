@@ -92,7 +92,7 @@ Source: [Global-Electronics-Retailer](https://mavenanalytics.io/data-playground/
 4. Open the Power BI report in Power BI Desktop.
 5. Connect to the required data source. In the Main_views folder, select the ge.vw_sales_products_fact, ge.vw_customer_segments, and ge.vw_customer_value_decile. Also, select the Store.csv at the Data folder.
 
-## Screenshots of the Dash board
+## Screenshots of the Dashboard
 ![Dashboard Home](Images/Home.png)
 ![Dashboard Overview](Images/Overview.png)
 ![Dashboard Products](Images/Products.png)
