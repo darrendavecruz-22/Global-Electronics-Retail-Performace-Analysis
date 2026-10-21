@@ -3,7 +3,7 @@ An end-to-end data analysis project exploring sales performance, profitability, 
 
 The goal is to identify business trends, evaluate profitability, and uncover opportunities to improve revenue and customer performance.
 
-##  Dash Board Preview
+##  Dashboard Preview
 ![Dashboard Overview](Dashboard_images/Overview.png)
 
 ## Main Problem
@@ -28,7 +28,7 @@ Totals below use 2016 to 2020 (full years): about $54.7M revenue and $32.1M prof
 5. Q4 was the strongest quarter every year from 2016 to 2019. By month, February (index 1.65), December (1.64), and January (1.40) are the strongest, and April (0.15) is the weakest.
 
 **Top categories, brands, and countries**
-1. Computers lead with 34.5% of revenue and $11.0M profit, followed by Home Appliances with 19.6% of revenue.
+1. Computers lead with 34.5% of revenue and $11M profit, followed by Home Appliances with 19.6% of revenue.
 2. The top four categories are Computers, Home Appliances, Cameras, Cell phones, which make up about 77% of revenue.
 3. Least performing categories are Games and Toys and Music, Movies and Audio Books.
 4. Adventure Works (21.2% of revenue, $6.8M profit), Contoso (19.4%), and Wide World Importers (16.5%) together make up 57% of revenue.
@@ -48,5 +48,28 @@ Totals below use 2016 to 2020 (full years): about $54.7M revenue and $32.1M prof
 8. At Risk is only 5.5% of customers but 8.4% of profit, at $4,182 per customer (second only to Champions).
 9. Cohorts: first-year profit per customer is steady for 2016 to 2019 ($1,730 to $1,930), and first-year orders rose from 1.22 (2016) to 1.55 (2018).
 
-##Data Source##
-[Source](https://mavenanalytics.io/data-playground/global-electronics-retailer)
+## Data Source
+Source: [Global-Electronics-Retailer](https://mavenanalytics.io/data-playground/global-electronics-retailer)
+
+## Tools and Approach
+1. SQL Server: Query, clean, transform, and analyze the data.
+2. Excel: Inspect data and perform preliminary checks where needed.
+3. Power BI: Build interactive dashboards and visualize key performance indicators.
+
+## How to Reproduce
+1. Clone or download this repository.
+2. Open the SQL scripts in SQL Server Management Studio.
+3. Run all the SQL queries located in the Main_views folder.
+4. Open the Power BI report in Power BI Desktop.
+5. Connect to the required data source. In the Main_views folder, select the ge.vw_sales_products_fact, ge.vw_customer_segments, and ge.vw_customer_value_decile. Also, select the Store.csv at the Data folder.
+
+## Screenshots of the Dash board
+![Dashboard Home](Dashboard_images/Home.png)
+![Dashboard Overview](Dashboard_images/Overview.png)
+![Dashboard Products](Dashboard_images/Products.png)
+![Dashboard Stores](Dashboard_images/Stores.png)
+![Dashboard Customers](Dashboard_images/Customers.png)
+![Dashboard Profile](Dashboard_images/Profile.png)
+
+## Revenue Forecast Chart
+
