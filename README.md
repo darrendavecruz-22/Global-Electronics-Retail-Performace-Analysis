@@ -4,7 +4,7 @@ An end-to-end data analysis project exploring sales performance, profitability, 
 The goal is to identify business trends, evaluate profitability, and uncover opportunities to improve revenue and customer performance.
 
 ##  Dashboard Preview
-![Dashboard Overview](Dashboard_images/Overview.png)
+![Dashboard Overview](Images/Overview.png)
 
 ## Main Problem
 This business analysis project aims to investigate how can a global electronics retailer increase profitability, improve sales performance, and make better customer decisions using historical sales data. Specifically, the projects aims to answer the following questions:
@@ -37,7 +37,16 @@ Totals below use 2016 to 2020 (full years): about $54.7M revenue and $32.1M prof
 7. The least profitable products are low-priced accessories (USB cables, fan parts) earning $7 to $19 each at about 49% margin.
 8. The top 10 products are desktop computers and 52" LCD TVs, all at a 66.9% margin, and together they make up roughly 9% of profit.
 
-**Demographics and buying behavior**
+**Store and Channel**
+1. Online share of revenue grew every year, from 16.8% in 2016 to 22.3% in 2020.
+2. Over the whole period, online accounts for about 20% of revenue (about $11.4M), $6.67M of profit, and 5,580 orders (21% of all orders).
+3. The average store earns $778K in revenue and $556 per square meter.
+4. The top stores are Nevada ($1.42M revenue, $831K profit), Kansas ($1.39M), and Nebraska ($1.38M).
+5.  The lowest-revenue stores are small stores in France (Franche-Comté $106K, Corse $151K, Martinique $160K), plus the Northern Territory (Australia) store at only $15K revenue and 4 orders.
+6.  Floor space is not the main driver of revenue. Wyoming (840 m²) earns $1.22M, which is 86% of Nevada's revenue (2,000 m²) with 42% of the space. Wyoming has the best revenue per square meter ($1,454), followed by Alaska ($1,051) and Hawaii ($1,010).
+7.  Some large stores earn little per square meter and are worth reviewing: Fermanagh, UK (2,100 m², $182 per m²), Tasmania (2,000 m², $221), Brandenburg, Germany (1,715 m², $227), and Western Australia (2,000 m², $269).
+
+**Demographics and Customer buying behavior**
 1. Age and gender barely change behavior. Profit per customer is $2,660 to $2,804 across age brackets, and $2,755 (male) vs $2,741 (female).
 2. Orders per customer are about 2.2 in every group.
 3. The 65+ group is the largest contributor (31% of customers and 31% of profit).
@@ -47,6 +56,26 @@ Totals below use 2016 to 2020 (full years): about $54.7M revenue and $32.1M prof
 7. Lapsed is the biggest segment, which consists of 34.5% of customers and 21.6% of profit, with last order about 1,039 days ago.
 8. At Risk is only 5.5% of customers but 8.4% of profit, at $4,182 per customer (second only to Champions).
 9. Cohorts: first-year profit per customer is steady for 2016 to 2019 ($1,730 to $1,930), and first-year orders rose from 1.22 (2016) to 1.55 (2018).
+
+**Revenue Forecast**
+In this section, I identify what revenue the business can expect for the next 12 months (Mar 2021 - Feb 2022) using the following methods:
+1. Estimate a seasonal index for each calendar month (revenue divided by its centered 12-month average, averaged by month). The last month used to estimate indices is July 2019, so that no 2020 data enters the seasonal trend.
+2. Deseasonalize revenue and take the average of the last 3 months (Dec 2020 to Feb 2021) as the current level ($381K per month).
+3. Forecast = seasonal index × current level × (1 + monthly growth)^n.
+
+I also make assumptions to simulate 3 possible scenarios:
+| Scenario | Monthly Growth | Assumption |
+|---|---|---|
+| Lower bound | -2% | The 2020 declines continues at a milder rate than 2020.|
+| Base | 0% | Current level continues with no recovery nor further decline. |
+| Upper bound | 3% | A return to 2019's pace. |
+
+With that, I have accumulated the following results:
+| Scenario | Next 12 months | vs. Last 12 months |
+|---|---|---|
+| Lower bound | $3.93M | -34.8% |
+| **Forecast(Base)** | **$4.58M** | **-24.2%** |
+| Upper bound | $5.75M | -4.7% |
 
 ## Data Source
 Source: [Global-Electronics-Retailer](https://mavenanalytics.io/data-playground/global-electronics-retailer)
@@ -63,13 +92,13 @@ Source: [Global-Electronics-Retailer](https://mavenanalytics.io/data-playground/
 4. Open the Power BI report in Power BI Desktop.
 5. Connect to the required data source. In the Main_views folder, select the ge.vw_sales_products_fact, ge.vw_customer_segments, and ge.vw_customer_value_decile. Also, select the Store.csv at the Data folder.
 
-## Screenshots of the Dash board
-![Dashboard Home](Dashboard_images/Home.png)
-![Dashboard Overview](Dashboard_images/Overview.png)
-![Dashboard Products](Dashboard_images/Products.png)
-![Dashboard Stores](Dashboard_images/Stores.png)
-![Dashboard Customers](Dashboard_images/Customers.png)
-![Dashboard Profile](Dashboard_images/Profile.png)
+## Screenshots of the Dashboard
+![Dashboard Home](Images/Home.png)
+![Dashboard Overview](Images/Overview.png)
+![Dashboard Products](Images/Products.png)
+![Dashboard Stores](Images/Stores.png)
+![Dashboard Customers](Images/Customers.png)
+![Dashboard Profile](Images/Profile.png)
 
 ## Revenue Forecast Chart
-
+![Revenue Forecast Chart](Images/Forecast.png)
