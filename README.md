@@ -48,6 +48,26 @@ Totals below use 2016 to 2020 (full years): about $54.7M revenue and $32.1M prof
 8. At Risk is only 5.5% of customers but 8.4% of profit, at $4,182 per customer (second only to Champions).
 9. Cohorts: first-year profit per customer is steady for 2016 to 2019 ($1,730 to $1,930), and first-year orders rose from 1.22 (2016) to 1.55 (2018).
 
+**Revenue Forecast**
+In this section, I identify what revenue the business can expect for the next 12 months (Mar 2021 - Feb 2022) using the following methods:
+1. Estimate a seasonal index for each calendar month (revenue divided by its centered 12-month average, averaged by month). The last month used to estimate indices is July 2019, so that no 2020 data enters the seasonal trend.
+2. Deseasonalize revenue and take the average of the last 3 months (Dec 2020 to Feb 2021) as the current level ($381K per month).
+3. Forecast = seasonal index × current level × (1 + monthly growth)^n.
+
+I also make assumptions to simulate 3 possible scenarios:
+| Scenario | Monthly Growth | Assumption |
+|---|---|---|
+| Lower bound | -2% | The 2020 declines continues at a milder rate than 2020.|
+| Base | 0% | Current level continues with no recovery nor further decline. |
+| Upper bound | 3% | A return to 2019's pace. |
+
+With that, I have accumulated the following results:
+| Scenario | Next 12 months | Assumption |
+|---|---|---|
+| Lower bound | $3.93M | -34.8% |
+| **Forecast(Base)** | **$4.58M** | **-24.2%** |
+| Upper bound | $5.75M | -4.7% |
+
 ## Data Source
 Source: [Global-Electronics-Retailer](https://mavenanalytics.io/data-playground/global-electronics-retailer)
 
