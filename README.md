@@ -62,7 +62,7 @@ I also make assumptions to simulate 3 possible scenarios:
 | Upper bound | 3% | A return to 2019's pace. |
 
 With that, I have accumulated the following results:
-| Scenario | Next 12 months | Assumption |
+| Scenario | Next 12 months | vs. Last 12 months |
 |---|---|---|
 | Lower bound | $3.93M | -34.8% |
 | **Forecast(Base)** | **$4.58M** | **-24.2%** |
