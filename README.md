@@ -37,7 +37,16 @@ Totals below use 2016 to 2020 (full years): about $54.7M revenue and $32.1M prof
 7. The least profitable products are low-priced accessories (USB cables, fan parts) earning $7 to $19 each at about 49% margin.
 8. The top 10 products are desktop computers and 52" LCD TVs, all at a 66.9% margin, and together they make up roughly 9% of profit.
 
-**Demographics and buying behavior**
+**Store and Channel**
+1. Online share of revenue grew every year, from 16.8% in 2016 to 22.3% in 2020.
+2. Over the whole period, online accounts for about 20% of revenue (about $11.4M), $6.67M of profit, and 5,580 orders (21% of all orders).
+3. The average store earns $778K in revenue and $556 per square meter.
+4. The top stores are Nevada ($1.42M revenue, $831K profit), Kansas ($1.39M), and Nebraska ($1.38M).
+5.  The lowest-revenue stores are small stores in France (Franche-Comté $106K, Corse $151K, Martinique $160K), plus the Northern Territory (Australia) store at only $15K revenue and 4 orders.
+6.  Floor space is not the main driver of revenue. Wyoming (840 m²) earns $1.22M, which is 86% of Nevada's revenue (2,000 m²) with 42% of the space. Wyoming has the best revenue per square meter ($1,454), followed by Alaska ($1,051) and Hawaii ($1,010).
+7.  Some large stores earn little per square meter and are worth reviewing: Fermanagh, UK (2,100 m², $182 per m²), Tasmania (2,000 m², $221), Brandenburg, Germany (1,715 m², $227), and Western Australia (2,000 m², $269).
+
+**Demographics and Customer buying behavior**
 1. Age and gender barely change behavior. Profit per customer is $2,660 to $2,804 across age brackets, and $2,755 (male) vs $2,741 (female).
 2. Orders per customer are about 2.2 in every group.
 3. The 65+ group is the largest contributor (31% of customers and 31% of profit).
